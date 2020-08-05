@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Relative Layout-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativelayout"
+    tools:context=".MainActivity">
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_main_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="top"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom_navbar1"
+        app:menu="@menu/bottom_navbar"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        app:labelVisibilityMode="labeled"
+        android:background="#FFFF"
+
+        app:itemIconTint="@drawable/tab_color"
+        app:itemTextColor="@drawable/tab_color"
+
+
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/weather_frame"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/weather_frame"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_above="@+id/bottom_navbar1"
+        android:id="@+id/card_frame"/>
+
+
+
+
+    <!--        -->
+
+
+
+<!--    <fragment-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:layout_height="120dp"-->
+<!--        android:id="@+id/weather_frame"-->
+<!--        tools:layout="@layout/activity_main"-->
+<!--        android:background="#FFFF"-->
+<!--        />-->
+
+
+
+</RelativeLayout>
+
+

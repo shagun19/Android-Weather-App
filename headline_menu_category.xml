@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <!--    <item android:title="Notification " />-->
+    <!--    <item android:title="Help" />-->
+    <!--    <item android:title="Google " />-->
+    <!--    <item android:title="Home" />-->
+    <item android:id="@+id/headline_world"
+        android:title="WORLD"
+        app:showAsAction="ifRoom" />
+    <item android:id="@+id/headline_business"
+        android:title="BUSINESS"
+        app:showAsAction="ifRoom" />
+    <item android:id="@+id/headline_politics"
+        android:title="POLITICS"
+        app:showAsAction="ifRoom" />
+    <item android:id="@+id/headline_sports"
+        android:title="SPORTS"
+        app:showAsAction="ifRoom" />
+    <item android:id="@+id/headline_technology"
+        android:title="TECHNOLOGY"
+        app:showAsAction="ifRoom" />
+<!--    <item android:id="@+id/headline_science"-->
+<!--        android:title="SCIENCE"-->
+<!--        app:showAsAction="ifRoom" />-->
+
+
+</menu>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--    <item android:title="Notification " />-->
+<!--    <item android:title="Help" />-->
+<!--    <item android:title="Google " />-->
+<!--    <item android:title="Home" />-->
+        <item android:id="@+id/bottom_nav_home"
+            android:title="Home"
+            android:icon="@drawable/ic_home_black_24dp"
+            app:showAsAction="ifRoom" />
+        <item android:id="@+id/bottom_nav_home_headlines"
+            android:title="Headlines"
+            android:icon="@drawable/app_icon"
+            app:showAsAction="ifRoom"/>
+        <item android:id="@+id/bottom_nav_home_trending"
+            android:title="Trending"
+            android:icon="@drawable/ic_trending_up_black_24dp"
+            app:showAsAction="always"/>
+    <item android:id="@+id/bottom_nav_home_bookmarks"
+        android:title="Bookmarks"
+        android:icon="@drawable/ic_bookmarks_black_24dp_bottom_nav"
+        app:showAsAction="always"/>
+</menu>
